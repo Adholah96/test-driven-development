@@ -1,8 +1,8 @@
 require_relative '../solver'
 
 def factorial(num)
-  raise ArgumentError, 'Invalid input: only accepts 0 and positive integers' unless n.is_a?(Integer) && num >= 0
-  return 1 if n.zero?
+  raise ArgumentError, 'Invalid input: only accepts 0 and positive integers' unless num.is_a?(Integer) && num >= 0
+  return 1 if num.zero?
 
   (1..num).reduce(:*)
 end

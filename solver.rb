@@ -1,6 +1,6 @@
 class Solver
-    def factorial(N)
-        if N = 0
-
+    def factorial(n)
+        raise ArgumentError, "Invalid input : only accepts 0 and positive integers" if n.negative?
+        (1..n).reduce(1,:*)
     end
 end

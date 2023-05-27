@@ -1,18 +1,19 @@
 class Solver
-    def factorial(n)
-        raise ArgumentError, "Invalid input : only accepts 0 and positive integers" if n.negative?
-        (1..n).reduce(1,:*)
-    end
+  def factorial(num)
+    raise ArgumentError, 'Invalid input : only accepts 0 and positive integers' if num.negative?
 
-    def reverse(word)
-        word.reverse
-    end
-    
-    def fizzbuzz(n)
-    return 'fizzbuzz' if n % 3 == 0 && n % 5 == 0
-    return 'fizz' if n % 3 == 0
-    return 'buzz' if n % 5 == 0
+    (1..num).reduce(1, :*)
+  end
 
-    n.to_s
-end
+  def reverse(word)
+    word.reverse
+  end
+
+  def fizzbuzz(num)
+    return 'fizzbuzz' if (num % 3).zero? && (num % 5).zero?
+    return 'fizz' if (num % 3).zero?
+    return 'buzz' if (num % 5).zero?
+
+    num.to_s
+  end
 end

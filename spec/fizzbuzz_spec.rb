@@ -1,11 +1,11 @@
 require_relative '../solver'
 
-def fizzbuzz(n)
-    return 'fizzbuzz' if n % 3 == 0 && n % 5 == 0
-    return 'fizz' if n % 3 == 0
-    return 'buzz' if n % 5 == 0
+def fizzbuzz(num)
+  return 'fizzbuzz' if num % 3 == 0 && num % 5 == 0
+  return 'fizz' if num % 3 == 0
+  return 'buzz' if num % 5 == 0
 
-    n.to_s
+  num.to_s
 end
 
 describe '#fizzbuzz' do
